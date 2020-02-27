@@ -17,7 +17,7 @@ import subprocess
 import sys
 import time
 
-
+###update
 def wait_element(locator, max_time=20, interval_time=0.5):
     WebDriverWait(driver, max_time, interval_time).until(EC.presence_of_element_located(locator))
     time.sleep(1)
@@ -50,7 +50,7 @@ settime = inpuTime[1]
 mics = int(inpuTime[2])
 sel = int(inpuTime[3])
 
-f = open("name.yaml","r")
+f = open("name.yaml","r",encoding = 'utf-8')
 config = yaml.safe_load(f)
 #print(config)
 for kk in config.keys():
