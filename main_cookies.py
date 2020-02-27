@@ -50,7 +50,7 @@ settime = inpuTime[1]
 mics = int(inpuTime[2])
 sel = int(inpuTime[3])
 
-f = open("name.yaml","r")
+f = open("name.yaml","r",encoding = 'utf-8')
 config = yaml.safe_load(f)
 #print(config)
 for kk in config.keys():
