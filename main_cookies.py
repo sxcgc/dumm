@@ -17,7 +17,7 @@ import subprocess
 import sys
 import time
 
-
+###update
 def wait_element(locator, max_time=20, interval_time=0.5):
     WebDriverWait(driver, max_time, interval_time).until(EC.presence_of_element_located(locator))
     time.sleep(1)
